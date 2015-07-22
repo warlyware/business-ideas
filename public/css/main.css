@@ -18,6 +18,10 @@ h1, h2 {
   /*color: white;*/
 }
 
+p, label {
+  color: white !important;
+}
+
 body {
   /*background-color: black;*/
 }
