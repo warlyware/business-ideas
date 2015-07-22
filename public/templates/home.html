@@ -1,0 +1,56 @@
+
+<h2 class="center">Create a new business hypothesis</h2>
+
+<div class="card blue-grey lighten-1 z-depth-3">
+  <div class="card-content white-text">
+
+
+    <form class="form-horizontal" ng-submit="submitHypothesis()">
+      <div class="form-group">
+        <label class="col-sm-4 control-label">Who is your customer?</label>
+        <div class="col-sm-8">
+          <textarea name="group" placeholder="describing your target audience" class="form-control" rows="2" ng-model="hypo.group" required></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label">What is their problem or need?</label>
+        <div class="col-sm-8">
+          <textarea name="problem" placeholder="What is the specific problem this customer group has" class="form-control" rows="3" ng-model="hypo.problem" required></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label">How do you want to fix it?</label>
+        <div class="col-sm-8">
+          <textarea name="solution" placeholder="describe the value proposition; what is the core benefit for the customer" class="form-control" rows="3" ng-model="hypo.solution" required></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label">How feasible is it?</label>
+        <div class="col-sm-8">
+          <textarea name="cost" placeholder="describe the buisness model" class="form-control" ng-model="hypo.cost" rows="2"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label">Your Email</label>
+        <div class="col-sm-8">
+          <input name="email" type="email" class="form-control" placeholder="Your Email" ng-model="hypo.email" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label">Do you have a name for this?</label>
+        <div class="col-sm-8">
+          <input name="name" class="form-control" placeholder="A name for the business hypothesis" ng-model="hypo.name">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-8">
+          <button type="submit" class="waves-effect waves-light btn">Create Hypothesis</button>
+        </div>
+      </div>
+    </form>
+
+
+  </div>
+</div>
+
+

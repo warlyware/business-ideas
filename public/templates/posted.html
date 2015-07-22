@@ -1,0 +1,75 @@
+<h1>Business Hypothesis</h1>
+
+<div class="card blue-grey lighten-1 z-depth-3">
+  <div class="card-content white-text">
+
+
+
+
+<div class="idea">
+  <div class="row" ng-show="showOne">
+
+    <div class="col-sm-3 section-label">
+      Target Group
+    </div>
+    <div class="col-sm-9">
+      <div class="well section">
+        {{idea.group}}
+        <br><br>
+        <button class="waves-effect waves-light btn" ng-click="showTwo=true; showOne=false">yes</button>
+        <button class="waves-effect waves-light btn" ng-click="showTwo=true; showOne=false">no</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" ng-show="showTwo">
+    <div class="col-sm-3 section-label">
+      The Problem
+    </div>
+    <div class="col-sm-9">
+      <div class="well section">
+        {{idea.problem}}
+        <br><br>
+        <button class="waves-effect waves-light btn" ng-click="showThree=true; showTwo=false">yes</button>
+        <button class="waves-effect waves-light btn" ng-click="showThree=true; showTwo=false">no</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" ng-show="showThree">
+    <div class="col-sm-3 section-label">
+      The proposed solution
+    </div>
+    <div class="col-sm-9">
+      <div class="well section">
+        {{idea.solution}}
+        <br><br>
+        <button class="waves-effect waves-light btn" ng-click="showFour=true; showThree=false">yes</button>
+        <button class="waves-effect waves-light btn" ng-click="showFour=true; showThree=false">no</button>        
+      </div>
+    </div>
+  </div>
+
+  <div class="row" ng-show="showFour">
+    <div class="col-sm-3 section-label">
+      Feasibility
+    </div>
+    <div class="col-sm-9">
+      <div class="well section">
+        {{idea.cost}}
+        <br><br>
+        <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">yes</a> -->
+        <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">no</a>         -->
+        <button class="waves-effect waves-light btn" ng-click="finishSurvey()">yes</button>
+        <button class="waves-effect waves-light btn" ng-click="finishSurvey()">no</button>        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Trigger -->
+
+
+
+  </div>
+</div>
